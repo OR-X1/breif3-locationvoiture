@@ -9,6 +9,15 @@
 ::-webkit-scrollbar-thumb:hover{
     background: #b0abab;
 }
+
+/*----------*//*------ selection ----*//*----------*/
+
+::selection {
+    color: rgb(255, 255, 255);
+    background-color: #BC3434;
+/*    display: none;*/
+/*    background-color: rgb(13, 202, 142*/
+}
 /*----------*//*------ navBar ----*//*----------*/
 
 body{
@@ -16,6 +25,7 @@ body{
     padding: 0;
     font-family: poppins;
     font-style: bold;
+    overflow-x: hidden;
     
 }
 
@@ -67,6 +77,9 @@ body{
 }
 
 @media only screen and (max-width: 880px) {
+    body{
+        overflow-x: hidden;
+    }
     
 
     .logo{
@@ -150,9 +163,10 @@ body{
 
 
 .btnTop{
-    
+    opacity: 0;
     width: 60px;
     position: fixed;
+    z-index: 9999;
     left: 1180px;
     bottom: 20px;
     transition: 0.5s;
@@ -168,3 +182,74 @@ body{
     color: #23527C;
 }
 
+
+.barContact {
+    width: 75%;
+    height: 50px;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    margin: 0px;
+    font-size: 14px;
+    display: flex;
+    
+    position: fixed;
+
+}
+
+
+
+.pContact i{
+    padding-left: 20px;
+}
+.pContact a{
+    padding-left: 7px;
+    text-decoration: none;
+    color: #000;
+}
+.pContact a:hover{
+    color: #234F75;
+}
+
+.lange a img{
+    width: 30px;
+}
+
+.lange {
+    margin: 10px 0;
+    
+}
+.lange a{
+/*    padding-right: 20px;*/
+}
+.lange a img{
+    
+    border-radius: 100px;
+    
+}
+.divContact {
+     margin: 0 10%;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 1010px) {
+    .divContact{
+         margin: 0 3%;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .barContact{
+        display: none;
+        transition: 0.5s;
+    }
+}
+
+
+
+
+
+#google_translate_element {
+    margin-top: 13px;
+}

@@ -2,10 +2,11 @@ body{
     margin: 0;
     padding: 0;
     background: #201F32;
+    
 }
 .intro{
     width: 100%;
-    border-top: 1px solid #912F2F;
+    border-top: 1px solid #201F32;
     
     position: relative;
     top: 150px;
@@ -86,6 +87,8 @@ body{
 
 .ulTypeCar{
     display: flex;
+    position: relative;
+    width: auto;
     margin: auto;
     margin-bottom: 30px;
     

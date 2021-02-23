@@ -21,15 +21,59 @@
         <header>
           <div>
               <div class="logo">
-                  <a class="" href="ACCUEIL.html"><img src="image/logo.png" alt=""></a>
+                  <a class="" href="ACCUEIL.html"><img src="image/logoR.png" alt=""></a>
               </div>
-<!--
-              <div class="contact">
-                    <a href="#">+212 6 64 47 44 99 – +212 6 61 09 51 44</a>
-                    <a href="#">ho.rentacar@gmail.com
-                    </a>
+              
+              
+              <div class="barContact">
+                  <div class="divContact">
+                      <p class="pContact">
+                <i class="fa fa-phone"></i>
+                <a>+212 679 06 87 83</a>
+                <i class="fa fa-envelope"></i>
+                <a href="O.RHAZLANI@student.youcode.ma">O.RHAZLANI@student.youcode.ma</a>
+                </p>
+                  </div>
+                  <div class="lange">
+                      <a  onclick="myFunction('index.html?/#googtrans(fr|ar)')" title="View this site in English."><img src="image/maroc.jfif" alt=""></a>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a onclick="myFunction('index.html?/#googtrans(fr|fr)')"  title="View this site in English."><img src="image/france.jfif" alt=""></a>
+<!--                      <a href="#" class="adressstyle" target="_blank" rel="nofollow" onclick="window.open('http://www.google.com/translate?u='+encodeURIComponent(location.this)+'&amp;langpair=en%7Cfr&amp;hl=en&amp;ie=UTF8'); return false;" title="Google-Translate-English to French ">French</a>-->
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a onclick="myFunction('index.html?/#googtrans(fr|en)')" title="View this site in English."><img src="image/british.jfif" alt=""></a>
+                      
+  <script type="text/javascript">
+    
+//    function myFunction(lien) {
+//  location.assign(lien);
+//}
+//    
+    
+    
+    
+    
+    
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+    pageLanguage: 'fr',
+    autoDisplay: false,
+    gaTrack: true,
+    gaId: 'wewe',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>                    
+                      
+
+                 
+                 
+                  </div>
+                  <div></div>
               </div>
--->
+              
+              
+              
              <div class="menu-toggle"></div>
             <nav class="navBar">
                
@@ -80,7 +124,7 @@
  
 		<div class="footer-left">
  
-                <h3><img src="image/logo.png" alt=""></h3>
+                <h3><img src="image/logoR.png" alt=""></h3>
 
                 <p class="footer-links">
                 <a href="index.html">ACCUEIL</a>
@@ -145,25 +189,33 @@
                 var Sujet = document.forms["validForm"]["Sujet"].value;
                 var Massage = document.forms["validForm"]["Massage"].value;
                 
-                if(nom=="" || nom.length<4){
-                    alert("saisi votre nom");
+                if(nom==""){
+                    alert("saisi votre nom !!!");
                     return false;
+                }else if(nom.length<4){
+                    alert("saisi votre nom > 4 les caracteres !!!");
+                    return true;
                 }
                 if(email==""){
-                    alert("saisi votre Email");
+                    alert("saisi votre Email !!!");
                     return false;
                 }if(!(vaEmail.test(email))){
-                    alert("entrer email sous form Exemple@exemple.ex");
+                    alert("entrer email sous form Exemple@exemple.ex !!!");
                     return false;
                 }
                 if(Sujet==""){
-                    alert("saisi votre Sujet");
+                    alert("saisi votre Sujet !!!");
                     return false;
                 }
-                if(Massage=="" || Massage.length<10){
-                    alert("saisi votre Massage");
+                if(Massage==""){
+                    alert("saisi votre Massage !!!");
+                    return false;
+                }else if(Massage.length<25){
+                    alert("saisi votre Massage > 25 caracteres !!!");
                     return false;
                 }
+                
+                alert("votre Massage a ete envoye ;)");
             }
             
             
